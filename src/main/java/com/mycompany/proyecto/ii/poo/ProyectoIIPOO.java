@@ -13,6 +13,11 @@ public class ProyectoIIPOO {
     // Sebastian Padilla Escalante y Alejandro Monge Arguedas.
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("Programa iniciado"); // Se imprime en consola la indicacion de que arranca el programa.
+        
+        // Se crea la pantalla del menu principal.
+        MenuPrincipal menu = new MenuPrincipal();
+        menu.setVisible(true); // Su resolucion/dimension es de 1280x720p
+        
     }
 }
