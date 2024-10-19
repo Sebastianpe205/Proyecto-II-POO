@@ -9,5 +9,10 @@ package com.mycompany.proyecto.ii.poo;
  * @author sebas
  */
 public class Casilla {
+
+    public Casilla() {
+    }
+    
+    
     
 }

@@ -8,11 +8,11 @@ package com.mycompany.proyecto.ii.poo;
  *
  * @author sebas
  */
-public class CasillaFinal extends Casilla {
-    
+public class CasillaInicial extends Casilla {
+
     // Constructores.
     
-    public CasillaFinal() {
+    public CasillaInicial() {
     }
     
 }
