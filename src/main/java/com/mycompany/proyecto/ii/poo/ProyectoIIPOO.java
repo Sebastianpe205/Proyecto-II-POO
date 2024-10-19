@@ -4,6 +4,8 @@
 
 package com.mycompany.proyecto.ii.poo;
 
+import java.awt.Color;
+
 /**
  *
  * @author sebas
@@ -17,6 +19,7 @@ public class ProyectoIIPOO {
         
         // Se crea la pantalla del menu principal.
         MenuPrincipal menu = new MenuPrincipal();
+        //menu.setBackground(Color.white);
         menu.setVisible(true); // Su resolucion/dimension es de 1280x720p
         
     }
