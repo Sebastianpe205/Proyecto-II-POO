@@ -17,6 +17,9 @@ public class ProyectoIIPOO {
     public static void main(String[] args) {
         System.out.println("Programa iniciado"); // Se imprime en consola la indicacion de que arranca el programa.
         
+        ReproductorMusica musicaPrincipal = new ReproductorMusica();
+        musicaPrincipal.reproducirMusica("src/main/resources/Musica/musicaTituloMP7.WAV", 1);
+        
         // Se crea la pantalla del menu principal.
         MenuPrincipal menu = new MenuPrincipal();
         //menu.setBackground(Color.white);
