@@ -24,6 +24,7 @@ public class ProyectoIIPOO {
         MenuPrincipal menu = new MenuPrincipal();
         //menu.setBackground(Color.white);
         menu.setVisible(true); // Su resolucion/dimension es de 1280x720p
+        int x = (int) (Math.random() * 101); // Ejemplo de como elegir un numero al azar entre 0 y 100.
         
     }
 }
