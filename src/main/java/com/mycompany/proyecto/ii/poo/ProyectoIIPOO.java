@@ -25,6 +25,7 @@ public class ProyectoIIPOO {
         //menu.setBackground(Color.white);
         menu.setVisible(true); // Su resolucion/dimension es de 1280x720p
         int x = (int) (Math.random() * 101); // Ejemplo de como elegir un numero al azar entre 0 y 100.
+        System.out.println("Prueba de numero random (0-100): " + x);
         
     }
 }
