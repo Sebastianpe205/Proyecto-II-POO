@@ -13,6 +13,7 @@ public class PantallasManager {
     
     // Constructor.
     public PantallasManager() {
+        MenuPrincipal p_principal = new MenuPrincipal();
     }
     
 }
