@@ -19,12 +19,11 @@ public class ProyectoIIPOO {
         
         ReproductorMusica musicaPrincipal = new ReproductorMusica();
         musicaPrincipal.reproducirMusica("src/main/resources/Musica/musicaTituloMP7.WAV", 1);
-        PantallasManager pManager = new PantallasManager();
         
         // Se crea la pantalla del menu principal.
-//        MenuPrincipal menu = new MenuPrincipal();
-//        //menu.setBackground(Color.white);
-//        menu.setVisible(true); // Su resolucion/dimension es de 1280x720p
+        MenuPrincipal menu = new MenuPrincipal();
+        //menu.setBackground(Color.white);
+        menu.setVisible(true); // Su resolucion/dimension es de 1280x720p
         int x = (int) (Math.random() * 101); // Ejemplo de como elegir un numero al azar entre 0 y 100.
         System.out.println("Prueba de numero random (0-100): " + x);
         
