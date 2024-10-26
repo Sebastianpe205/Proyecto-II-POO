@@ -15,12 +15,14 @@ import javax.swing.JPanel;
  * @author sebas
  */
 public class MenuPrincipal extends javax.swing.JFrame {
+    private PantallasManager pantallasManager;
 
     /**
      * Creates new form MenuPrincipal
      */
-    public MenuPrincipal() {
+    public MenuPrincipal(PantallasManager manager) {
         initComponents();
+        this.pantallasManager = manager;
     }
 
     /**
@@ -64,6 +66,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        if (pantallasManager != null){
+            pantallasManager.cerrarMenuPrincipal();
+            pantallasManager.mostrarMenuSeleccionModo();
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
     
     /**
@@ -94,11 +100,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MenuPrincipal().setVisible(true);
-            }
-        });
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new MenuPrincipal().setVisible(true);
+//            }
+//        });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
