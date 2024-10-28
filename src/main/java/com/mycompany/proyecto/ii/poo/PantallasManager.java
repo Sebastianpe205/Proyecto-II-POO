@@ -13,7 +13,7 @@ public class PantallasManager {
     // Tambien les agrega musica de fondo.
     MenuPrincipal p_principal = new MenuPrincipal(this);
     MenuSeleccionModo p_SeleccionModo = new MenuSeleccionModo(this);
-    MenuSeleccionTablero p_SeleccionTablero = new MenuSeleccionTablero();
+    MenuSeleccionTablero p_SeleccionTablero = new MenuSeleccionTablero(this);
     MenuSeleccionMinijuego p_SeleccionMinijuego = new MenuSeleccionMinijuego();
     ReproductorMusica reproductorMusica = new ReproductorMusica();
     
