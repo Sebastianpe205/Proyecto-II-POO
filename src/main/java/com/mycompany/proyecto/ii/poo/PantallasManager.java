@@ -12,7 +12,7 @@ public class PantallasManager {
     // Maneja la apertura y el cierre de las pantallas del juego.
     // Tambien les agrega musica de fondo.
     MenuPrincipal p_principal = new MenuPrincipal(this);
-    MenuSeleccionModo p_SeleccionModo = new MenuSeleccionModo();
+    MenuSeleccionModo p_SeleccionModo = new MenuSeleccionModo(this);
     MenuSeleccionTablero p_SeleccionTablero = new MenuSeleccionTablero();
     MenuSeleccionMinijuego p_SeleccionMinijuego = new MenuSeleccionMinijuego();
     ReproductorMusica reproductorMusica = new ReproductorMusica();

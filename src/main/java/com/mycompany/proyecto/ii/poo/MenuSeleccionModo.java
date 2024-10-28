@@ -13,7 +13,7 @@ public class MenuSeleccionModo extends javax.swing.JFrame {
     /**
      * Creates new form MenuSeleccionModo
      */
-    public MenuSeleccionModo() {
+    public MenuSeleccionModo(PantallasManager manager) {
         initComponents();
     }
 
@@ -95,11 +95,11 @@ public class MenuSeleccionModo extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MenuSeleccionModo().setVisible(true);
-            }
-        });
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new MenuSeleccionModo().setVisible(true);
+//            }
+//        });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
