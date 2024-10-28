@@ -57,7 +57,21 @@ public class PantallasManager {
     void mostrarMenuSeleccionTablero(){
         // Muestra el menu de seleccion de tableros.
         this.p_SeleccionTablero.setVisible(true);
-        
+        this.reproductorMusica.reproducirMusica("src/main/resources/Musica/musicaSeleccionTablero.WAV", 0);
+    }
+    
+    void cerrarMenuSeleccionTableros(){
+        // Cierra el menu de seleccion de tableros.
+        this.p_SeleccionTablero.setVisible(false);
+        this.reproductorMusica.detenerMusica();
+    }
+    
+    // Menu de seleccion de minijuegos.
+    
+    void mostrarMenuSeleccionMinijuegos(){
+        // Muestra el menu de seleccion de minijuegos.
+        this.p_SeleccionMinijuego.setVisible(true);
+        this.reproductorMusica.reproducirMusica("src/main/resources/Musica/musicaSeleccionMinijuego.WAV", 0);
     }
     
 }

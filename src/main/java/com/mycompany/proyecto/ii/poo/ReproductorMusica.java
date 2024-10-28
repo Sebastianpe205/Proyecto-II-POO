@@ -43,7 +43,7 @@ public class ReproductorMusica {
             }
         } catch (Exception e) {
             ; // No hace nada, solo no se reproduce la musica. El ';' vacio es equivalente al 'pass' en Python.
-            System.out.println("Error");
+            System.out.println("Error: " + e.toString()); // Da detalles del error de reproduccion.
         }
     }
     

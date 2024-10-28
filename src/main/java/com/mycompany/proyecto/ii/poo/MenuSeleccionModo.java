@@ -9,12 +9,14 @@ package com.mycompany.proyecto.ii.poo;
  * @author sebas
  */
 public class MenuSeleccionModo extends javax.swing.JFrame {
+    private PantallasManager manager;
 
     /**
      * Creates new form MenuSeleccionModo
      */
     public MenuSeleccionModo(PantallasManager manager) {
         initComponents();
+        this.manager = manager;
     }
 
     /**
@@ -34,7 +36,7 @@ public class MenuSeleccionModo extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton2.setText("jButton2");
+        jButton2.setContentAreaFilled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -60,11 +62,19 @@ public class MenuSeleccionModo extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         System.out.println("Modo Party Cruise");
+        if (manager != null){
+            manager.cerrerMenuSeleccionModo();
+            manager.mostrarMenuSeleccionTablero();
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         System.out.println("Modo Minigame Cruise");
+        if (manager != null){
+            manager.cerrerMenuSeleccionModo();
+            manager.mostrarMenuSeleccionMinijuegos();
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
