@@ -13,6 +13,8 @@ public class PantallasManager {
     // Tambien les agrega musica de fondo.
     MenuPrincipal p_principal = new MenuPrincipal(this);
     MenuSeleccionModo p_SeleccionModo = new MenuSeleccionModo();
+    MenuSeleccionTablero p_SeleccionTablero = new MenuSeleccionTablero();
+    MenuSeleccionMinijuego p_SeleccionMinijuego = new MenuSeleccionMinijuego();
     ReproductorMusica reproductorMusica = new ReproductorMusica();
     
     // Constructor.
@@ -21,6 +23,8 @@ public class PantallasManager {
     }
     
     // Metodos de pantallas.
+    
+    // Menu principal.
     
     void mostrarMenuPrincipal(){
         // Muestra el menu principal.
@@ -34,10 +38,26 @@ public class PantallasManager {
         this.reproductorMusica.detenerMusica();
     }
     
+    // Menu de seleccion de modos.
+    
     void mostrarMenuSeleccionModo(){
         // Muestra el menu de seleccion de modos.
         this.p_SeleccionModo.setVisible(true);
         this.reproductorMusica.reproducirMusica("src/main/resources/Musica/musicaSeleccionModoMP7.WAV", 0);
+    }
+    
+    void cerrerMenuSeleccionModo(){
+        // Cierra el menu de seleccion de modos.
+        this.p_SeleccionModo.dispose();
+        this.reproductorMusica.detenerMusica();
+    }
+    
+    // Menu de seleccion de tableros.
+    
+    void mostrarMenuSeleccionTablero(){
+        // Muestra el menu de seleccion de tableros.
+        this.p_SeleccionTablero.setVisible(true);
+        
     }
     
 }
