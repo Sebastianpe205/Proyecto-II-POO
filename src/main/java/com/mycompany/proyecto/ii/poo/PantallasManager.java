@@ -14,7 +14,7 @@ public class PantallasManager {
     MenuPrincipal p_principal = new MenuPrincipal(this);
     MenuSeleccionModo p_SeleccionModo = new MenuSeleccionModo(this);
     MenuSeleccionTablero p_SeleccionTablero = new MenuSeleccionTablero(this);
-    MenuSeleccionMinijuego p_SeleccionMinijuego = new MenuSeleccionMinijuego();
+    MenuSeleccionMinijuego p_SeleccionMinijuego = new MenuSeleccionMinijuego(this);
     ReproductorMusica reproductorMusica = new ReproductorMusica();
     
     // Constructor.
@@ -72,6 +72,12 @@ public class PantallasManager {
         // Muestra el menu de seleccion de minijuegos.
         this.p_SeleccionMinijuego.setVisible(true);
         this.reproductorMusica.reproducirMusica("src/main/resources/Musica/musicaSeleccionMinijuego.WAV", 0);
+    }
+    
+    void cerrarMenuSeleccionMinijuegos(){
+        // Cierra el menu de seleccion de minijuegos.
+        this.p_SeleccionMinijuego.setVisible(false);
+        this.reproductorMusica.detenerMusica();
     }
     
 }
