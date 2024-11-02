@@ -4,6 +4,8 @@
  */
 package com.mycompany.proyecto.ii.poo;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author sebas
@@ -78,6 +80,30 @@ public class PantallasManager {
         // Cierra el menu de seleccion de minijuegos.
         this.p_SeleccionMinijuego.setVisible(false);
         this.reproductorMusica.detenerMusica();
+    }
+    
+    // Carga de pantallas de tableros.
+    
+    void cargarGrandCanal(){
+        // Da la opcion de buscar una partida en el tablero Grand Canal.
+        
+        // Abre un cuadro de dialogo para confirmar la busqueda de una nueva partida.
+        int respuesta = JOptionPane.showConfirmDialog(p_SeleccionTablero, "Buscar una partida activa en Grand Canal?", "Nueva Partida", JOptionPane.YES_NO_OPTION); // Retorna un entero.
+        
+        if (respuesta == JOptionPane.YES_OPTION){
+            System.out.println("Buscando partida activa en Grand Canal...");
+        }
+    }
+    
+    void cargarNeonHeights(){
+        // Da la opcion de buscar una partida en el tablero Neon Heights.
+        
+        // Abre un cuadro de dialogo para confirmar la busqueda de una nueva partida.
+        int respuesta = JOptionPane.showConfirmDialog(p_SeleccionTablero, "Buscar una partida activa en Neon Heights?", "Nueva Partida", JOptionPane.YES_NO_OPTION); // Retorna un entero.
+        
+        if (respuesta == JOptionPane.YES_OPTION){
+            System.out.println("Buscando partida activa en Neon Heights...");
+        }
     }
     
 }

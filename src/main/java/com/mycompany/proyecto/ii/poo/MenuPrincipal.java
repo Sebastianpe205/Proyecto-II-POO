@@ -49,7 +49,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 1268, 130));
 
         jButton1.setFont(new java.awt.Font("Mario Party Hudson", 0, 52)); // NOI18N
-        jButton1.setText("Start");
+        jButton1.setText("Vamos!");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
