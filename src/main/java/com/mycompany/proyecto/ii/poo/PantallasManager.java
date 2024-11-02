@@ -21,7 +21,7 @@ public class PantallasManager {
     
     // Constructor.
     public PantallasManager() {
-        
+        // Utiliza los valores preestablecidos.
     }
     
     // Metodos de pantallas.
@@ -66,6 +66,8 @@ public class PantallasManager {
         // Cierra el menu de seleccion de tableros.
         this.p_SeleccionTablero.setVisible(false);
         this.reproductorMusica.detenerMusica();
+        
+        System.out.println("RAM utilizada (KB): " + (double) (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024);
     }
     
     // Menu de seleccion de minijuegos.
