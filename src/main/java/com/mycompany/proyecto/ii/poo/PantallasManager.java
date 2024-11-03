@@ -17,6 +17,7 @@ public class PantallasManager {
     MenuSeleccionModo p_SeleccionModo = new MenuSeleccionModo(this);
     MenuSeleccionTablero p_SeleccionTablero = new MenuSeleccionTablero(this);
     MenuSeleccionMinijuego p_SeleccionMinijuego = new MenuSeleccionMinijuego(this);
+    MenuOpciones p_Opciones = new MenuOpciones(this);
     ReproductorMusica reproductorMusica = new ReproductorMusica();
     
     // Constructor.
@@ -81,6 +82,20 @@ public class PantallasManager {
     void cerrarMenuSeleccionMinijuegos(){
         // Cierra el menu de seleccion de minijuegos.
         this.p_SeleccionMinijuego.setVisible(false);
+        this.reproductorMusica.detenerMusica();
+    }
+    
+    // Menu de opciones.
+    
+    void mostrarMenuOpciones(){
+        // Muestra el menu de opciones.
+        this.p_Opciones.setVisible(true);
+        // Agregar musica de fondo.
+    }
+    
+    void cerrarMenuOpciones(){
+        // Cierra el menu de opciones.
+        this.p_Opciones.setVisible(false);
         this.reproductorMusica.detenerMusica();
     }
     
