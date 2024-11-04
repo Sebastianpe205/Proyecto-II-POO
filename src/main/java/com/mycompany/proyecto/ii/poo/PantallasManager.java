@@ -68,7 +68,7 @@ public class PantallasManager {
         this.p_SeleccionTablero.setVisible(false);
         this.reproductorMusica.detenerMusica();
         
-        System.out.println("RAM utilizada (KB): " + (double) (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024);
+        
     }
     
     // Menu de seleccion de minijuegos.
@@ -90,13 +90,46 @@ public class PantallasManager {
     void mostrarMenuOpciones(){
         // Muestra el menu de opciones.
         this.p_Opciones.setVisible(true);
-        // Agregar musica de fondo.
+        this.reproductorMusica.reproducirMusica("src/main/resources/Musica/musicaControlRoom.WAV", 0);
     }
     
     void cerrarMenuOpciones(){
         // Cierra el menu de opciones.
         this.p_Opciones.setVisible(false);
         this.reproductorMusica.detenerMusica();
+    }
+    
+    // Carga de cuadros de dialogo en el menu de Opciones.
+    
+    void verMemoriaUsada(){
+        // Muestra la memoria usada en un cuadro de dialogo (KB y MB)
+        System.out.println("RAM utilizada (KB): " + (double) (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024);
+        System.out.println("RAM utilizada (MB): " + (double) ((Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024) / 1024);
+        
+        double usoMemoriaKB = (double) (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024; // Memoria usada en KB.
+        double usoMemoriaMB = usoMemoriaKB / 1024; // Memoria usada en MB.
+        
+        if (usoMemoriaMB >= 1000){ // Si la memoria usada es mas de 1 GB, imprime tambien esa medida.
+            double usoMemoriaGB = usoMemoriaMB / 1024;
+            System.out.println("RAM utilizada (GB): " + usoMemoriaGB);
+            int respuesta = JOptionPane.showConfirmDialog(p_Opciones, "Memoria utilizada (KB): " + usoMemoriaKB + "\nMemoria utilizada (MB): " + usoMemoriaMB + "\nMemoria utilizada (GB): " + usoMemoriaGB, "Uso de Memoria", JOptionPane.OK_OPTION);
+        } else {
+            int respuesta = JOptionPane.showConfirmDialog(p_Opciones, "Memoria utilizada (KB): " + usoMemoriaKB + "\nMemoria utilizada (MB): " + usoMemoriaMB, "Uso de Memoria", JOptionPane.OK_OPTION);
+        }
+    }
+    
+    void limpiarMemoria(){ // No sirve, no implementar.
+        // Llama al Garbage Collector de Java.
+        int respuesta = JOptionPane.showConfirmDialog(p_Opciones, "Limpiar la memoria RAM?", "Limpiar Memoria", JOptionPane.YES_NO_OPTION);
+        
+        if (respuesta == JOptionPane.YES_OPTION){
+            Runtime.getRuntime().gc();
+            respuesta = JOptionPane.showConfirmDialog(p_Opciones, "Se ha limpiado la memoria.", "Limpiar Memoria", JOptionPane.OK_OPTION);
+        }
+    }
+    
+    void mostrarControles(){
+        // Muestra los controles del juego.
     }
     
     // Carga de pantallas de tableros.
