@@ -9,5 +9,6 @@ package com.mycompany.proyecto.ii.poo;
  * @author sebas
  */
 public class Jugador {
+    private int posicionActual; // Indice de la posicion en el tablero.
     
 }
