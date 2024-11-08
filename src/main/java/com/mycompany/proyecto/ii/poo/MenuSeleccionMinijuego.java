@@ -29,6 +29,15 @@ public class MenuSeleccionMinijuego extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -42,6 +51,35 @@ public class MenuSeleccionMinijuego extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, 240, 60));
+
+        jButton2.setFont(new java.awt.Font("Mario Party Hudson", 0, 24)); // NOI18N
+        jButton2.setText("Gato");
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, 440, 30));
+
+        jButton3.setFont(new java.awt.Font("Mario Party Hudson", 0, 24)); // NOI18N
+        jButton3.setText("Sopa de letras");
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 490, 440, 30));
+
+        jButton4.setText("jButton4");
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 540, 440, 30));
+
+        jButton5.setText("jButton5");
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 590, 440, 30));
+
+        jButton6.setText("jButton6");
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 640, 440, 30));
+
+        jButton7.setText("jButton7");
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 490, 440, 30));
+
+        jButton8.setText("jButton8");
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 440, 440, 30));
+
+        jButton9.setText("jButton9");
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 540, 440, 30));
+
+        jButton10.setText("jButton10");
+        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 590, 440, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/menuMinijuegos2.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1380, 720));
@@ -92,6 +130,15 @@ public class MenuSeleccionMinijuego extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
