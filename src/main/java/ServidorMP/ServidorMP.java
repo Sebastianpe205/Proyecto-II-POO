@@ -10,4 +10,8 @@ package ServidorMP;
  */
 public class ServidorMP {
     
+    public static void main(String[] args){
+        System.out.println("Servidor de Mario Poorty");
+    }
+    
 }
