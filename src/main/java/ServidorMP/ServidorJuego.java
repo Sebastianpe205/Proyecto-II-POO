@@ -14,12 +14,20 @@ import java.net.Socket;
  *
  * @author sebas
  */
-public class ServidorMP {
+public abstract class ServidorJuego {
+    ServerSocket servidor;
+    Socket socketJugador;
+    DataOutputStream salida;
+    DataInputStream entrada;
+    ObjectInputStream objReader;
     
-    public static void main(String[] args){
-        System.out.println("Servidor de Mario Poorty");
-        
-        
+    public ServidorJuego(){
+        iniciar();
+    }
+    
+    void iniciar(){
+        // Inicia el servidor del juego.
+        System.out.println("Servidor iniciado");
     }
     
 }

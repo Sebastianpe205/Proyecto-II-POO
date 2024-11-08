@@ -19,6 +19,7 @@ public class PantallasManager {
     MenuSeleccionMinijuego p_SeleccionMinijuego = new MenuSeleccionMinijuego(this);
     MenuOpciones p_Opciones = new MenuOpciones(this);
     ReproductorMusica reproductorMusica = new ReproductorMusica();
+    SocketManager socketManager;
     
     // Constructor.
     public PantallasManager() {
@@ -128,8 +129,39 @@ public class PantallasManager {
         }
     }
     
-    void mostrarControles(){
-        // Muestra los controles del juego.
+    void mostrarTutorial(){
+        // Muestra los controles e instrucciones generales del juego.
+        int respuesta = JOptionPane.showConfirmDialog(p_Opciones, """
+                                                                  Tutorial
+                                                                  
+                                                                  
+                                                                  -Es posible jugar contra los CPUs en los modos de un solo jugador.
+                                                                  
+                                                                  -Para jugar en modos multijugador, deben conectarse al servidor con
+                                                                  una partida activa.
+                                                                  
+                                                                  -Todos los minujuegos y tableros se juegan utilizando unicamente el mouse.""", "Creditos", JOptionPane.OK_OPTION);
+    }
+    
+    void mostrarCreditos(){
+        // Muestra los creditos del juego.
+        int respuesta = JOptionPane.showConfirmDialog(p_Opciones, """
+                                                                  Mario Poorty
+                                                                  
+                                                                  Desarrollado por:
+                                                                  -Sebastián de Jesús Padilla Escalante
+                                                                  -Alejandro Monge Arguedas
+                                                                  
+                                                                  Profesor:
+                                                                  -Diego Mora Rojas
+                                                                  
+                                                                  Imágenes y sonidos:
+                                                                  -Basados en productos de la saga Mario Party.
+                                                                  -Nintendo
+                                                                  
+                                                                  Proyecto II de Programación Orientada a Objetos
+                                                                  II Semestre, 2024
+                                                                  Instituto Tecnológico de Costa Rica""", "Creditos", JOptionPane.OK_OPTION);
     }
     
     // Carga de pantallas de tableros.
