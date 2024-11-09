@@ -18,6 +18,7 @@ public class PantallasManager {
     MenuSeleccionTablero p_SeleccionTablero = new MenuSeleccionTablero(this);
     MenuSeleccionMinijuego p_SeleccionMinijuego = new MenuSeleccionMinijuego(this);
     MenuOpciones p_Opciones = new MenuOpciones(this);
+    PantallaSeleccionPersonaje p_SeleccionPersonaje = new PantallaSeleccionPersonaje(this);
     ReproductorMusica reproductorMusica = new ReproductorMusica();
     SocketManager socketManager;
     
@@ -53,6 +54,20 @@ public class PantallasManager {
     void cerrerMenuSeleccionModo(){
         // Cierra el menu de seleccion de modos.
         this.p_SeleccionModo.dispose();
+        this.reproductorMusica.detenerMusica();
+    }
+    
+    // Menu de seleccion de personaje.
+    
+    void mostrarMenuSeleccionPersonaje(){
+        // Muestra el menu de seleccion de personaje.
+        this.p_SeleccionPersonaje.setVisible(true);
+        this.reproductorMusica.reproducirMusica("src/main/resources/Musica/musicaSeleccionTablero.WAV", 0);
+    }
+    
+    void cerrarMenuSeleccionPersonaje(){
+        // Cierra el menu de seleccion de personaje.
+        this.p_SeleccionPersonaje.dispose();
         this.reproductorMusica.detenerMusica();
     }
     
@@ -170,9 +185,9 @@ public class PantallasManager {
         // Da la opcion de buscar una partida en el tablero Grand Canal.
         
         // Abre un cuadro de dialogo para confirmar la busqueda de una nueva partida.
-        int respuesta = JOptionPane.showConfirmDialog(p_SeleccionTablero, "Buscar una partida activa en Grand Canal?", "Nueva Partida", JOptionPane.YES_NO_OPTION); // Retorna un entero.
+        int respuesta1 = JOptionPane.showConfirmDialog(p_SeleccionTablero, "Buscar una partida activa en Grand Canal?", "Nueva Partida", JOptionPane.YES_NO_OPTION); // Retorna un entero.
         
-        if (respuesta == JOptionPane.YES_OPTION){
+        if (respuesta1 == JOptionPane.YES_OPTION){
             System.out.println("Buscando partida activa en Grand Canal...");
         }
     }
@@ -181,9 +196,9 @@ public class PantallasManager {
         // Da la opcion de buscar una partida en el tablero Neon Heights.
         
         // Abre un cuadro de dialogo para confirmar la busqueda de una nueva partida.
-        int respuesta = JOptionPane.showConfirmDialog(p_SeleccionTablero, "Buscar una partida activa en Neon Heights?", "Nueva Partida", JOptionPane.YES_NO_OPTION); // Retorna un entero.
+        int respuesta1 = JOptionPane.showConfirmDialog(p_SeleccionTablero, "Buscar una partida activa en Neon Heights?", "Nueva Partida", JOptionPane.YES_NO_OPTION); // Retorna un entero.
         
-        if (respuesta == JOptionPane.YES_OPTION){
+        if (respuesta1 == JOptionPane.YES_OPTION){
             System.out.println("Buscando partida activa en Neon Heights...");
         }
     }

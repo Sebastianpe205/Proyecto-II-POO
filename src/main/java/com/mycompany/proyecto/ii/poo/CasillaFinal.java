@@ -14,5 +14,10 @@ public class CasillaFinal extends Casilla {
     
     public CasillaFinal() {
     }
+
+    @Override
+    void accionCasilla(Jugador jugador) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }

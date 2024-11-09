@@ -9,5 +9,10 @@ package com.mycompany.proyecto.ii.poo;
  * @author sebas
  */
 public class Carcel extends Casilla {
+
+    @Override
+    void accionCasilla(Jugador jugador) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
