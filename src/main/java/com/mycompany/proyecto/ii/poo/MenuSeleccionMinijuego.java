@@ -54,38 +54,83 @@ public class MenuSeleccionMinijuego extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Mario Party Hudson", 0, 24)); // NOI18N
         jButton2.setText("Gato");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, 440, 30));
 
         jButton3.setFont(new java.awt.Font("Mario Party Hudson", 0, 24)); // NOI18N
         jButton3.setText("Sopa de Letras");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 490, 440, 30));
 
         jButton4.setFont(new java.awt.Font("Mario Party Hudson", 0, 24)); // NOI18N
         jButton4.setText("Memory Path");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 540, 440, 30));
 
         jButton5.setFont(new java.awt.Font("Mario Party Hudson", 0, 24)); // NOI18N
         jButton5.setText("Super Bro's Memory");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 590, 440, 30));
 
         jButton6.setFont(new java.awt.Font("Mario Party Hudson", 0, 24)); // NOI18N
         jButton6.setText("Catch the Cat");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 640, 440, 30));
 
         jButton7.setFont(new java.awt.Font("Mario Party Hudson", 0, 24)); // NOI18N
         jButton7.setText("Guess Who?");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 490, 440, 30));
 
         jButton8.setFont(new java.awt.Font("Mario Party Hudson", 0, 24)); // NOI18N
         jButton8.setText("Bombermario");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 440, 440, 30));
 
         jButton9.setFont(new java.awt.Font("Mario Party Hudson", 0, 24)); // NOI18N
         jButton9.setText("Collect the Coins");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 540, 440, 30));
 
         jButton10.setFont(new java.awt.Font("Mario Party Hudson", 0, 24)); // NOI18N
         jButton10.setText("Mario Cards");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 590, 440, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/menuMinijuegos2.png"))); // NOI18N
@@ -99,6 +144,60 @@ public class MenuSeleccionMinijuego extends javax.swing.JFrame {
         manager.cerrarMenuSeleccionMinijuegos();
         manager.mostrarMenuSeleccionModo();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        manager.cerrarMenuSeleccionMinijuegos();
+        manager.mostrarMenuSeleccionPersonaje();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        manager.cerrarMenuSeleccionMinijuegos();
+        manager.mostrarMenuSeleccionPersonaje();
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        manager.cerrarMenuSeleccionMinijuegos();
+        manager.mostrarMenuSeleccionPersonaje();
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        manager.cerrarMenuSeleccionMinijuegos();
+        manager.mostrarMenuSeleccionPersonaje();
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        manager.cerrarMenuSeleccionMinijuegos();
+        manager.mostrarMenuSeleccionPersonaje();
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+        manager.cerrarMenuSeleccionMinijuegos();
+        manager.mostrarMenuSeleccionPersonaje();
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        manager.cerrarMenuSeleccionMinijuegos();
+        manager.mostrarMenuSeleccionPersonaje();
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+        manager.cerrarMenuSeleccionMinijuegos();
+        manager.mostrarMenuSeleccionPersonaje();
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+        manager.cerrarMenuSeleccionMinijuegos();
+        manager.mostrarMenuSeleccionPersonaje();
+    }//GEN-LAST:event_jButton10ActionPerformed
 
     /**
      * @param args the command line arguments

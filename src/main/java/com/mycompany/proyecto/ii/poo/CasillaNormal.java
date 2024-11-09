@@ -8,13 +8,11 @@ package com.mycompany.proyecto.ii.poo;
  *
  * @author sebas
  */
-public class FlorDeFuego extends Casilla {
-
-    public FlorDeFuego() {
-        this.ubicacionIcono = "src/main/resources/Imagenes/iconoFlorDeFuego.png";
+public class CasillaNormal extends Casilla{
+    
+    public CasillaNormal() {
+        this.ubicacionIcono = "src/main/resources/Imagenes/iconoCasilla.png";
     }
-    
-    
 
     @Override
     void accionCasilla(Jugador jugador) {
@@ -27,7 +25,6 @@ public class FlorDeFuego extends Casilla {
     String getUbicacionIcono(){
         return this.ubicacionIcono;
     }
-    
-    
+
     
 }

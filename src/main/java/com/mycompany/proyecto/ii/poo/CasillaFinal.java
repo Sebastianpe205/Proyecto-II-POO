@@ -13,11 +13,19 @@ public class CasillaFinal extends Casilla {
     // Constructores.
     
     public CasillaFinal() {
+        this.ubicacionIcono = "src/main/resources/Imagenes/iconoCasillaFinal.png";
     }
 
     @Override
     void accionCasilla(Jugador jugador) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
+    // Getter de la ubicacion del icono.
+    
+    @Override
+    String getUbicacionIcono(){
+        return this.ubicacionIcono;
     }
     
 }

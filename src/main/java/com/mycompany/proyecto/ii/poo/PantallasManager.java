@@ -19,8 +19,10 @@ public class PantallasManager {
     MenuSeleccionMinijuego p_SeleccionMinijuego = new MenuSeleccionMinijuego(this);
     MenuOpciones p_Opciones = new MenuOpciones(this);
     PantallaSeleccionPersonaje p_SeleccionPersonaje = new PantallaSeleccionPersonaje(this);
+    PantallaTableroGrandCanal p_Tablero;
     ReproductorMusica reproductorMusica = new ReproductorMusica();
     SocketManager socketManager;
+    String tableroSeleccionado;
     
     // Constructor.
     public PantallasManager() {
@@ -170,7 +172,7 @@ public class PantallasManager {
     void mostrarMenuSeleccionPersonaje(){
         // Muestra el menu de seleccion de personaje.
         this.p_SeleccionPersonaje.setVisible(true);
-        this.reproductorMusica.reproducirMusica("src/main/resources/Musica/musicaSeleccionTablero.WAV", 0);
+        this.reproductorMusica.reproducirMusica("src/main/resources/Musica/musicaSeleccionPersonaje.WAV", 0);
     }
     
     void cerrarMenuSeleccionPersonaje(){
@@ -181,9 +183,24 @@ public class PantallasManager {
     
     // Manejo de seleccion del personaje.
     
-    boolean confirmacionPersonaje(){
+    boolean confirmacionPersonaje(String nombre){
         // Da un cuadro de dialogo confirmando la seleccion del personaje
-        return true; // Retorno temporal.
+        String nombrePersonaje;
+        int respuesta1 = JOptionPane.showConfirmDialog(p_Opciones, "Usar a " + nombre + "?", "Confirmar Personaje", JOptionPane.YES_NO_OPTION);
+        
+        if (respuesta1 == JOptionPane.YES_OPTION){
+            // Conecta con el socket...
+            
+            
+            
+            // Temporal.
+            return true;
+            
+        } else {
+            return false;
+        }
+        
+        // Verificar mediante sockets si alguien mas en el servidor ha elegido al personaje...
     }
     
     // Carga de pantallas de tableros.
@@ -193,9 +210,14 @@ public class PantallasManager {
         
         // Abre un cuadro de dialogo para confirmar la busqueda de una nueva partida.
         int respuesta1 = JOptionPane.showConfirmDialog(p_SeleccionTablero, "Buscar una partida activa en Grand Canal?", "Nueva Partida", JOptionPane.YES_NO_OPTION); // Retorna un entero.
+        Tablero tablero = new Tablero();
+        tablero.imprimirTablero();
         
         if (respuesta1 == JOptionPane.YES_OPTION){
             System.out.println("Buscando partida activa en Grand Canal...");
+            cerrarMenuSeleccionTableros();
+            mostrarMenuSeleccionPersonaje();
+            p_Tablero = new PantallaTableroGrandCanal(this);
         }
     }
     
@@ -207,7 +229,26 @@ public class PantallasManager {
         
         if (respuesta1 == JOptionPane.YES_OPTION){
             System.out.println("Buscando partida activa en Neon Heights...");
+            cerrarMenuSeleccionTableros();
+            mostrarMenuSeleccionPersonaje();
         }
+    }
+    
+    void jugarGrandCanal(){
+        PantallaTableroGrandCanal gc = new PantallaTableroGrandCanal(this);
+        this.p_SeleccionPersonaje.dispose();
+        this.reproductorMusica.detenerMusica();
+        gc.setVisible(true);
+        this.reproductorMusica.reproducirMusica("src/main/resources/Musica/SailTheCanalsMP7.WAV", 0);
+        
+    }
+    
+    void jugarNeonHeights(){
+        //
+    }
+    
+    String getTableroSeleccionado(){
+        return this.tableroSeleccionado;
     }
     
 }

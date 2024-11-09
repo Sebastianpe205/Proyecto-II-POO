@@ -9,6 +9,6 @@ package com.mycompany.proyecto.ii.poo;
  * @author sebas
  */
 public interface Minijuego {
-    boolean estado = false; // Determina si el minijuego esta desarrollado y es usable dentro del juego.
+    boolean estado = false; // Determina si el minijuego esta desarrollado y es usable dentro del juego. Se cambia en cada constructor.
     
 }

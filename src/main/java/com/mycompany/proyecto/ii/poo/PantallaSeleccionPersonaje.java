@@ -10,6 +10,7 @@ package com.mycompany.proyecto.ii.poo;
  */
 public class PantallaSeleccionPersonaje extends javax.swing.JFrame {
     private PantallasManager manager;
+    private String tablero;
 
     /**
      * Creates new form PantallaSeleccionPersonaje
@@ -17,6 +18,7 @@ public class PantallaSeleccionPersonaje extends javax.swing.JFrame {
     public PantallaSeleccionPersonaje(PantallasManager manager) {
         initComponents();
         this.manager = manager;
+        this.tablero = tablero;
     }
 
     /**
@@ -54,6 +56,7 @@ public class PantallaSeleccionPersonaje extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        jButton13 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -68,61 +71,121 @@ public class PantallaSeleccionPersonaje extends javax.swing.JFrame {
         jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton1.setContentAreaFilled(false);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/spriteLuigi.png"))); // NOI18N
         jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton2.setContentAreaFilled(false);
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/spritePeach.png"))); // NOI18N
         jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton3.setContentAreaFilled(false);
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/spriteDaisy.png"))); // NOI18N
         jButton4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton4.setContentAreaFilled(false);
         jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/spriteToad.png"))); // NOI18N
         jButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton5.setContentAreaFilled(false);
         jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/spriteYoshi.png"))); // NOI18N
         jButton6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton6.setContentAreaFilled(false);
         jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/spriteKoopa.png"))); // NOI18N
         jButton7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton7.setContentAreaFilled(false);
         jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/spriteWario.png"))); // NOI18N
         jButton8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton8.setContentAreaFilled(false);
         jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/spriteWaluigi.png"))); // NOI18N
         jButton9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton9.setContentAreaFilled(false);
         jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/spriteBirdo.png"))); // NOI18N
         jButton10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton10.setContentAreaFilled(false);
         jButton10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
         jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/spriteShyGuy.png"))); // NOI18N
         jButton11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton11.setContentAreaFilled(false);
         jButton11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
 
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/spriteKamek.png"))); // NOI18N
         jButton12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton12.setContentAreaFilled(false);
         jButton12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Mario Party Hudson", 0, 36)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -172,15 +235,23 @@ public class PantallaSeleccionPersonaje extends javax.swing.JFrame {
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setText("Koopa");
 
+        jButton13.setFont(new java.awt.Font("Mario Party Hudson", 0, 24)); // NOI18N
+        jButton13.setText("Regresar");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(82, 82, 82)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(82, 82, 82)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jButton1)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -188,9 +259,13 @@ public class PantallaSeleccionPersonaje extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -263,14 +338,18 @@ public class PantallaSeleccionPersonaje extends javax.swing.JFrame {
                     .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(63, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -286,6 +365,193 @@ public class PantallaSeleccionPersonaje extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        // Mario
+        System.out.println("Personaje seleccionado: Mario");
+        boolean confirma = manager.confirmacionPersonaje("Mario");
+        if (confirma){
+            if (manager.getTableroSeleccionado() == "Grand Canal"){
+                manager.jugarGrandCanal();
+            } else {
+                manager.jugarNeonHeights();
+            }
+        }
+        manager.jugarGrandCanal(); // El 'if no se esta evaluando por alguna razon.
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        // TODO add your handling code here:
+        manager.cerrarMenuSeleccionPersonaje();
+        manager.mostrarMenuSeleccionModo();
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        // Luigi
+        System.out.println("Personaje seleccionado: Luigi");
+        boolean confirma = manager.confirmacionPersonaje("Luigi");
+        if (confirma){
+            if (manager.getTableroSeleccionado() == "Grand Canal"){
+                manager.jugarGrandCanal();
+            } else {
+                manager.jugarNeonHeights();
+            }
+        }
+        manager.jugarGrandCanal(); // El 'if no se esta evaluando por alguna razon.
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        // Peach
+        System.out.println("Personaje seleccionado: Peach");
+        boolean confirma = manager.confirmacionPersonaje("Peach");
+        if (confirma){
+            if (manager.getTableroSeleccionado() == "Grand Canal"){
+                manager.jugarGrandCanal();
+            } else {
+                manager.jugarNeonHeights();
+            }
+        }
+        manager.jugarGrandCanal(); // El 'if no se esta evaluando por alguna razon.
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        // Daisy
+        System.out.println("Personaje seleccionado: Daisy");
+        boolean confirma = manager.confirmacionPersonaje("Daisy");
+        if (confirma){
+            if (manager.getTableroSeleccionado() == "Grand Canal"){
+                manager.jugarGrandCanal();
+            } else {
+                manager.jugarNeonHeights();
+            }
+        }
+        manager.jugarGrandCanal(); // El 'if no se esta evaluando por alguna razon.
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        // Toad
+        System.out.println("Personaje seleccionado: Toad");
+        boolean confirma = manager.confirmacionPersonaje("Toad");
+        if (confirma){
+            if (manager.getTableroSeleccionado() == "Grand Canal"){
+                manager.jugarGrandCanal();
+            } else {
+                manager.jugarNeonHeights();
+            }
+        }
+        manager.jugarGrandCanal(); // El 'if no se esta evaluando por alguna razon.
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        // Yoshi
+        System.out.println("Personaje seleccionado: Yoshi");
+        boolean confirma = manager.confirmacionPersonaje("Yoshi");
+        if (confirma){
+            if (manager.getTableroSeleccionado() == "Grand Canal"){
+                manager.jugarGrandCanal();
+            } else {
+                manager.jugarNeonHeights();
+            }
+        }
+        manager.jugarGrandCanal(); // El 'if no se esta evaluando por alguna razon.
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        // Koopa
+        System.out.println("Personaje seleccionado: Koopa");
+        boolean confirma = manager.confirmacionPersonaje("Koopa");
+        if (confirma){
+            if (manager.getTableroSeleccionado() == "Grand Canal"){
+                manager.jugarGrandCanal();
+            } else {
+                manager.jugarNeonHeights();
+            }
+        }
+        manager.jugarGrandCanal(); // El 'if no se esta evaluando por alguna razon.
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+        // Wario
+        System.out.println("Personaje seleccionado: Wario");
+        boolean confirma = manager.confirmacionPersonaje("Wario");
+        if (confirma){
+            if (manager.getTableroSeleccionado() == "Grand Canal"){
+                manager.jugarGrandCanal();
+            } else {
+                manager.jugarNeonHeights();
+            }
+        }
+        manager.jugarGrandCanal(); // El 'if no se esta evaluando por alguna razon.
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+        // Waluigi
+        System.out.println("Personaje seleccionado: Waluigi");
+        boolean confirma = manager.confirmacionPersonaje("Waluigi");
+        if (confirma){
+            if (manager.getTableroSeleccionado() == "Grand Canal"){
+                manager.jugarGrandCanal();
+            } else {
+                manager.jugarNeonHeights();
+            }
+        }
+        manager.jugarGrandCanal(); // El 'if no se esta evaluando por alguna razon.
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+        // Birdo
+        System.out.println("Personaje seleccionado: Birdo");
+        boolean confirma = manager.confirmacionPersonaje("Birdo");
+        if (confirma){
+            if (manager.getTableroSeleccionado() == "Grand Canal"){
+                manager.jugarGrandCanal();
+            } else {
+                manager.jugarNeonHeights();
+            }
+        }
+        manager.jugarGrandCanal(); // El 'if no se esta evaluando por alguna razon.
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+        // Shy Guy
+        System.out.println("Personaje seleccionado: Shy Guy");
+        boolean confirma = manager.confirmacionPersonaje("Shy Guy");
+        if (confirma){
+            if (manager.getTableroSeleccionado() == "Grand Canal"){
+                manager.jugarGrandCanal();
+            } else {
+                manager.jugarNeonHeights();
+            }
+        }
+        manager.jugarGrandCanal(); // El 'if no se esta evaluando por alguna razon.
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+        // Kamek
+        System.out.println("Personaje seleccionado: Kamek");
+        boolean confirma = manager.confirmacionPersonaje("Kamek");
+        if (confirma){
+            if (manager.getTableroSeleccionado() == "Grand Canal"){
+                manager.jugarGrandCanal();
+            } else {
+                manager.jugarNeonHeights();
+            }
+        }
+        
+        manager.jugarGrandCanal(); // El 'if no se esta evaluando por alguna razon.
+    }//GEN-LAST:event_jButton12ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -327,6 +593,7 @@ public class PantallaSeleccionPersonaje extends javax.swing.JFrame {
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;

@@ -24,6 +24,8 @@ public abstract class Casilla {
     abstract void accionCasilla(Jugador jugador); // Se le hace override dependiendo de la funcion de cada casilla a un jugador especifico.
     // Puede ser al que cae en la casilla (this) o a otro jugador (referencia a onjeto Jugador).
     
+    abstract String getUbicacionIcono(); // Retorna el string con la ubicacion del icono correspondiente a la casilla.
+    
     
     
 }

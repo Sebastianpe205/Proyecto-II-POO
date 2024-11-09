@@ -10,9 +10,22 @@ package com.mycompany.proyecto.ii.poo;
  */
 public class Cola extends Casilla {
 
+    public Cola() {
+        this.ubicacionIcono = "src/main/resources/Imagenes/iconoColaTanooki.png";
+    }
+    
+    
+
     @Override
     void accionCasilla(Jugador jugador) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
+    // Getter de la ubicacion del icono.
+    
+    @Override
+    String getUbicacionIcono(){
+        return this.ubicacionIcono;
     }
     
 }
