@@ -57,20 +57,6 @@ public class PantallasManager {
         this.reproductorMusica.detenerMusica();
     }
     
-    // Menu de seleccion de personaje.
-    
-    void mostrarMenuSeleccionPersonaje(){
-        // Muestra el menu de seleccion de personaje.
-        this.p_SeleccionPersonaje.setVisible(true);
-        this.reproductorMusica.reproducirMusica("src/main/resources/Musica/musicaSeleccionTablero.WAV", 0);
-    }
-    
-    void cerrarMenuSeleccionPersonaje(){
-        // Cierra el menu de seleccion de personaje.
-        this.p_SeleccionPersonaje.dispose();
-        this.reproductorMusica.detenerMusica();
-    }
-    
     // Menu de seleccion de tableros.
     
     void mostrarMenuSeleccionTablero(){
@@ -177,6 +163,27 @@ public class PantallasManager {
                                                                   Proyecto II de Programación Orientada a Objetos
                                                                   II Semestre, 2024
                                                                   Instituto Tecnológico de Costa Rica""", "Creditos", JOptionPane.OK_OPTION);
+    }
+    
+    // Menu de seleccion de personaje.
+    
+    void mostrarMenuSeleccionPersonaje(){
+        // Muestra el menu de seleccion de personaje.
+        this.p_SeleccionPersonaje.setVisible(true);
+        this.reproductorMusica.reproducirMusica("src/main/resources/Musica/musicaSeleccionTablero.WAV", 0);
+    }
+    
+    void cerrarMenuSeleccionPersonaje(){
+        // Cierra el menu de seleccion de personaje.
+        this.p_SeleccionPersonaje.dispose();
+        this.reproductorMusica.detenerMusica();
+    }
+    
+    // Manejo de seleccion del personaje.
+    
+    boolean confirmacionPersonaje(){
+        // Da un cuadro de dialogo confirmando la seleccion del personaje
+        return true; // Retorno temporal.
     }
     
     // Carga de pantallas de tableros.

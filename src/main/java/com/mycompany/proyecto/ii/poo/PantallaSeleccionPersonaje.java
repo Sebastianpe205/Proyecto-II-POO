@@ -164,9 +164,13 @@ public class PantallaSeleccionPersonaje extends javax.swing.JFrame {
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("Toad");
 
-        jLabel12.setText("jLabel12");
+        jLabel12.setFont(new java.awt.Font("Mario Party Hudson", 0, 36)); // NOI18N
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setText("Yoshi");
 
-        jLabel13.setText("jLabel13");
+        jLabel13.setFont(new java.awt.Font("Mario Party Hudson", 0, 36)); // NOI18N
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel13.setText("Koopa");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
